@@ -2,8 +2,10 @@
 import LinkCard from './components/LinkCard.vue';
 import CardSection from './components/CardSection.vue';
 import ActivityCard from './components/ActivityCard.vue';
+import TextBlock from './components/TextBlock.vue';
 import {profile, links} from './data/links';
 import {activities} from './data/activities';
+import {intro} from './data/intro';
 </script>
 
 <template>
@@ -15,6 +17,8 @@ import {activities} from './data/activities';
         <p class="handle">{{ profile.handle }}</p>
         <p class="bio">{{ profile.bio }}</p>
       </section>
+
+      <TextBlock :blocks="intro" :collapse-after="3" />
 
       <section class="links">
         <LinkCard v-for="link in links" :key="link.url" :link="link" />
