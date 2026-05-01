@@ -1,6 +1,9 @@
 <script setup lang="ts">
-import LinkCard from './components/LinkCard.vue'
-import { profile, links } from './data/links'
+import LinkCard from './components/LinkCard.vue';
+import CardSection from './components/CardSection.vue';
+import ActivityCard from './components/ActivityCard.vue';
+import {profile, links} from './data/links';
+import {activities} from './data/activities';
 </script>
 
 <template>
@@ -16,6 +19,14 @@ import { profile, links } from './data/links'
       <section class="links">
         <LinkCard v-for="link in links" :key="link.url" :link="link" />
       </section>
+
+      <CardSection title="Activities">
+        <ActivityCard
+          v-for="activity in activities"
+          :key="activity.title"
+          :activity="activity"
+        />
+      </CardSection>
     </div>
   </main>
 </template>
