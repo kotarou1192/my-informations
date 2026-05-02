@@ -6,6 +6,10 @@ export type Block =
   | {type: 'paragraph'; text: string};
 
 export const intro: Block[] = [
+  {
+    type: 'paragraph',
+    text: '掲載内容は私自身の見解であり、必ずしも所属する企業や組織の立場、戦略、意見を代表するものではありません。',
+  },
   {type: 'heading', level: 2, text: 'About'},
   {
     type: 'list',

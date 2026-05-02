@@ -18,7 +18,7 @@ import {intro} from './data/intro';
         <p class="bio">{{ profile.bio }}</p>
       </section>
 
-      <TextBlock :blocks="intro" :collapse-after="3" />
+      <TextBlock :blocks="intro" :collapse-after="4" />
 
       <section class="links">
         <LinkCard v-for="link in links" :key="link.url" :link="link" />
