@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type {Activity} from '../data/activities';
-import {trackClick} from '../composables/useTracking';
 
 defineProps<{activity: Activity}>();
 </script>
@@ -14,7 +13,6 @@ defineProps<{activity: Activity}>();
         : {}
     "
     class="activity-card"
-    @click="activity.url && trackClick(activity.title, activity.url)"
   >
     <div class="activity-meta">
       <span class="activity-label">{{ activity.label }}</span>

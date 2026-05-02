@@ -1,18 +1,11 @@
 <script setup lang="ts">
 import type {LinkItem} from '../data/links';
-import {trackClick} from '../composables/useTracking';
 
 defineProps<{link: LinkItem}>();
 </script>
 
 <template>
-  <a
-    :href="link.url"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="link-card"
-    @click="trackClick(link.label, link.url)"
-  >
+  <a :href="link.url" target="_blank" rel="noopener noreferrer" class="link-card">
     <span class="link-icon" :style="{ color: link.color }" v-html="link.icon" />
     <span class="link-label">{{ link.label }}</span>
     <span class="link-arrow">→</span>
