@@ -7,14 +7,14 @@ export interface LinkItem {
 
 export interface Profile {
   name: string;
-  handle: string;
+  email: string;
   bio: string;
   avatarUrl: string;
 }
 
 export const profile: Profile = {
   name: 'kotarou1192',
-  handle: '@kotarou1192',
+  email: 'kousuke.ida.nagasaki@gmail.com',
   bio: 'Software Engineer',
   avatarUrl: 'https://github.com/kotarou1192.png',
 };
