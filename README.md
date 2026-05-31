@@ -4,6 +4,8 @@ kotarou1192 のポートフォリオです。
 
 自己紹介用の基本的な情報を置いています。
 
+<https://info.kotarou1192.com/>
+
 ## 方針
 
 Link in bio 的な用途で利用する。
