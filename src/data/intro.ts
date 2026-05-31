@@ -25,7 +25,10 @@ export const intro: Block[] = [
     items: [
       {
         text: '継続中',
-        children: ['エンドフィールド：ヤシロ#1095', 'NTE'],
+        children: [
+          'エンドフィールド：ヤシロ#1095',
+          'NTE：218239970189',
+          ],
       },
       {
         text: '休止中',
