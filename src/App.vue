@@ -4,9 +4,11 @@ import LinkCard from './components/LinkCard.vue';
 import CardSection from './components/CardSection.vue';
 import ActivityCard from './components/ActivityCard.vue';
 import TextBlock from './components/TextBlock.vue';
+import TechStackSection from './components/TechStackSection.vue';
 import {profile, links} from './data/links';
 import {activities} from './data/activities';
 import {intro} from './data/intro';
+import {techStack} from './data/techstack';
 
 const showContact = ref(false);
 const copied = ref(false);
@@ -44,6 +46,8 @@ function copyEmail() {
       </section>
 
       <TextBlock :blocks="intro" :collapse-after="4" />
+
+      <TechStackSection :groups="techStack" />
 
       <section class="links">
         <LinkCard v-for="link in links" :key="link.url" :link="link" />
