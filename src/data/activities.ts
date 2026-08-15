@@ -7,6 +7,12 @@ export interface Activity {
 
 export const activities: Activity[] = [
   {
+    title: 'Arduino からのステップアップとして ATmega 88PA-PU で L チカしよう',
+    label: '記事',
+    date: '2026-08-15',
+    url: 'https://qiita.com/kotarou1192/items/837f3dd0de7a7cfd44be',
+  },
+  {
     title: 'crowdworks.jp 最大の Rails アプリで YJIT を有効化した話',
     label: '記事',
     date: '2026-02-20',
